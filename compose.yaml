@@ -1,0 +1,5 @@
+services:
+  runner:
+    build: .
+    env_file: .env
+    command: ["npm","run","start","--","--nodeId=${NODE_ID}","--script=scripts/basic_stats.py"]
